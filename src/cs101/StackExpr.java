@@ -5,7 +5,7 @@
 package cs101;
 /*Roman, Joshua Francis
 * 3CSD-34
-* Lab Exercise 8
+* Lab Exercise 8 and 9
 * 
 * 
 */
@@ -27,6 +27,29 @@ public class StackExpr {
         {
             System.out.println("Prefix:" + s);
             System.out.println("Infix:" + Stack.prefixToInfix(s));
+        }
+        
+        else if(t == 3)
+        {
+            System.out.println("Prefix:" + s);
+            System.out.println("Infix:" + Stack.prefixToInfix(s));
+            System.out.println("Value:" + Stack.evalPrefix(s));
+        }
+       
+        else if (t == 4 )
+        {
+            System.out.println("Infix:" + s);
+            s = Stack.infixToPrefix(s);
+            System.out.println("Prefix:" + s);
+            System.out.println("Value:" + Stack.evalPrefix(s));
+        }
+        
+        else if(t == 5)
+        {
+            System.out.println("Infix:" + s);
+            s = Stack.infixToPostfix(s);
+            System.out.println("Postfix:" + s);
+            System.out.println("Values:" + Stack.evalPostfix(s));
         }
     } 
 }
